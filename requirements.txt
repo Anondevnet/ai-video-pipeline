@@ -1,0 +1,6 @@
+# Runtime is the Python standard library plus ffmpeg on PATH.
+# Mock generation, rendering, and validation all shell out to ffmpeg.
+# Live Kling calls use urllib and do not require an official SDK.
+
+# Dev
+pytest>=8.0

@@ -1,0 +1,16 @@
+{
+  "niche": "hip-hop",
+  "caption_language": "English",
+  "target_duration_seconds": 20,
+  "target_resolution": [1080, 1920],
+  "target_fps": 30,
+  "content_lanes": ["fresh_trending", "evergreen"],
+  "model": "kling-3.0-omni",
+  "clip_plan": {
+    "clips": 4,
+    "min_clip_seconds": 4,
+    "max_clip_seconds": 6,
+    "total_target_seconds": 20
+  },
+  "publication_targets": ["tiktok", "reels", "shorts"]
+}
