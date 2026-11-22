@@ -1,5 +1,9 @@
 # AI Video Pipeline
 
+[![CI](https://github.com/Anondevnet/ai-video-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Anondevnet/ai-video-pipeline/actions/workflows/ci.yml)
+
+![Demo](docs/demo.gif)
+
 A restartable pipeline for planning short-form vertical videos, generating clips, assembling a 20-second 1080×1920 render, and exporting a captioned package.
 
 Clip generation has two modes:
@@ -70,6 +74,15 @@ python3 -m pytest tests -q
 ```
 
 75 tests passed in this publication run (Python 3.11, ffmpeg available). Coverage includes character and schema validation, script structure, asset naming, checkpoint state, ffmpeg render/validate fixtures, restart idempotency, mocked Kling request and poll handling, and live-safety guards (mock artifacts cannot be promoted into a live run). ffmpeg is required for the render and validation tests.
+
+
+## Results
+
+Recorded in [GitHub Actions](https://github.com/Anondevnet/ai-video-pipeline/actions/runs/45046511944) on 22 November 2026, `ubuntu-latest`, Python 3.11, ffmpeg installed, mock mode (`KLING_MOCK=1`, `KLING_LIVE_AUTHORIZED=0`):
+
+| Metric | Value |
+|---|---|
+| Tests passed | 75 |
 
 ## Status and limitations
 
